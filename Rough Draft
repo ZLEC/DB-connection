@@ -1,0 +1,27 @@
+// Connect to a Database using Java
+
+// Calling a specific package of Java classes for database connection
+package database_console;
+
+// Import specific classes from database_console package
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+//use Driver Manager to enter the database login information
+public class DBConnect {
+  public static void main (String[] args) {
+		
+		// Attempts to connect to database and deal with potential errors
+		try {
+			String host = "    ";   //database type and server & port number
+			String uName = "admin";
+			String uPass = "admin";
+			Connection con = Driver Manager.get Connection (host, uName, uPass); 
+		}
+		catch (SQLException err) {
+			System.out.println(err.getMessage());
+		}
+	}
+}
